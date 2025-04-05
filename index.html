@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jasa Digital & Percetakan - GRAPHORA</title>
+    <style>
+        /* Navigasi Samping */
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 200px;
+            height: 100%;
+            background: #006d77;
+            padding-top: 20px;
+        }
+        nav .menu {
+            list-style: none;
+            padding: 0;
+        }
+        nav .menu li {
+            padding: 10px;
+        }
+        nav .menu li a {
+            color: white;
+            text-decoration: none;
+            display: block;
+            transition: background 0.3s;
+        }
+        nav .menu li a:hover {
+            background: #004f54;
+            padding-left: 5px;
+        }
+
+        /* Umum */
+        body {
+            margin-left: 220px;
+            font-family: Arial, sans-serif;
+            background-color: #e6fff5; /* Warna latar santai */
+            color: #333;
+        }
+        section {
+            padding: 40px 20px;
+        }
+
+        /* Header */
+        .header-container {
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            background-color: #edf6f9;
+            border-bottom: 2px solid #83c5be;
+        }
+        .logo {
+            width: 80px;
+            margin-right: 20px;
+        }
+        .header-text h1 {
+            margin: 0;
+            font-size: 28px;
+            color: #006d77;
+        }
+        .header-text p {
+            margin: 2px 0;
+            font-style: italic;
+        }
+
+        /* Tentang Kami */
+        .tentang h2 {
+            font-size: 28px;
+            margin-bottom: 15px;
+            color: #006d77;
+        }
+        .tentang p, .tentang li {
+            font-size: 16px;
+            line-height: 1.6;
+            max-width: 800px;
+        }
+
+        /* Katalog */
+        .katalog h2 {
+            margin-bottom: 20px;
+            color: #006d77;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .card {
+            border: 1px solid #ddd;
+            border-radius: 12px;
+            padding: 20px;
+            background: #ffffff;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            transition: transform 0.2s;
+        }
+        .card:hover {
+            transform: scale(1.02);
+        }
+        .card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+        .card h3 {
+            margin-top: 10px;
+        }
+        .price {
+            font-weight: bold;
+            color: #379683;
+        }
+
+        /* Testimoni */
+        .testimoni {
+            background-color: #f0fdfa;
+        }
+        .testimoni h2 {
+            margin-bottom: 20px;
+            color: #006d77;
+        }
+        .testi-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .testi-card {
+            background: #fff;
+            border-left: 4px solid #83c5be;
+            padding: 10px 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        form#testi-form {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            max-width: 500px;
+        }
+        textarea, input {
+            padding: 10px;
+            font-size: 14px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        button {
+            padding: 10px;
+            background: #379683;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        button:hover {
+            background: #2a7468;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #006d77;
+            color: white;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <img src="logo.png" alt="Logo" class="logo">
+            <div class="header-text">
+                <h1>GRAPHORA</h1>
+                <p>"Beyond Pixels & Paper"</p>
+                <p>Jasa Digital & Percetakan</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigasi -->
+    <nav>
+        <ul class="menu">
+            <li><a href="#tentang">Tentang Kami</a></li>
+            <li><a href="#katalog">Katalog</a></li>
+            <li><a href="#testimoni">Testimoni</a></li>
+            <li><a href="https://instagram.com/graphora.digital" target="_blank">Instagram</a></li>
+        </ul>
+    </nav>
+
+    <!-- Tentang Kami -->
+    <section id="tentang" class="tentang">
+        <h2>Tentang Kami</h2>
+        <p><strong>GRAPHORA</strong> adalah layanan digital dan percetakan yang hadir untuk mendukung kebutuhan UMKM, pelajar, dan masyarakat umum. Kami menyediakan berbagai layanan seperti:</p>
+        <ul>
+            <li>Pembuatan website untuk bisnis dan personal</li>
+            <li>Desain grafis kreatif seperti logo, poster, dan brosur</li>
+            <li>Pengerjaan tugas akademik secara terstruktur</li>
+            <li>Fotocopy dan cetak dokumen berkualitas</li>
+        </ul>
+        <p>Kami mengedepankan kualitas, ketepatan waktu, dan pelayanan ramah untuk membantu Anda berkembang di era digital.</p>
+    </section>
+
+    <!-- Katalog -->
+    <section id="katalog" class="katalog">
+        <h2>Katalog Layanan</h2>
+        <div class="grid">
+            <div class="card">
+                <img src="Website-service.jpg" alt="Website-Service">
+                <h3>Website</h3>
+                <p>Pembuatan website profesional untuk bisnis & personal.</p>
+                <p class="price">Mulai Rp 1.500.000</p>
+            </div>
+            <div class="card">
+                <img src="Assignment Assistance-Services.jpg" alt="Assignment Assistance Services">
+                <h3>Pengerjaan Tugas</h3>
+                <p>Layanan pendampingan akademik untuk membantu tugas kuliah Anda.</p>
+                <p class="price">Rp 5.000 / lembar</p>
+            </div>
+            <div class="card">
+                <img src="Print-service.jpg" alt="Print Service">
+                <h3>Print & Fotocopy</h3>
+                <p>Layanan cetak dokumen, brosur, dan lainnya.</p>
+                <p class="price">Rp 500 / lembar</p>
+            </div>
+            <div class="card">
+                <img src="design-service.jpg" alt="Desain Grafis">
+                <h3>Desain Grafis</h3>
+                <p>Desain logo, poster, brosur, dan lainnya.</p>
+                <p class="price">Mulai Rp 50.000</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimoni -->
+    <section id="testimoni" class="testimoni">
+        <h2>Testimoni Pelanggan</h2>
+        <div class="testi-grid" id="testi-container">
+            <!-- Testimoni dari pelanggan akan muncul di sini -->
+        </div>
+        <form id="testi-form">
+            <textarea id="testi-input" placeholder="Tulis testimoni Anda di sini..." required></textarea>
+            <input type="text" id="testi-name" placeholder="Nama Anda" required>
+            <button type="submit">Kirim Testimoni</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        &copy; 2025 GRAPHORA. All rights reserved. <br>
+        Website created by An Nisa Putri Cendana
+    </footer>
+
+    <!-- Script Testimoni -->
+    <script>
+        document.getElementById('testi-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const testiContainer = document.getElementById('testi-container');
+            const testiInput = document.getElementById('testi-input').value;
+            const testiName = document.getElementById('testi-name').value;
+            
+            if (testiInput && testiName) {
+                const testiCard = document.createElement('div');
+                testiCard.classList.add('testi-card');
+                testiCard.innerHTML = `<p>${testiInput}</p><span>- ${testiName}</span>`;
+                testiContainer.appendChild(testiCard);
+                
+                document.getElementById('testi-form').reset();
+            }
+        });
+    </script>
+</body>
+</html>
